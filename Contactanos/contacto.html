@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - LifeHunter</title>
+    <link rel="stylesheet" href="contacto.css">
+    <script src="contacto.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/logo1png.png" alt="Logo LifeHunter"></a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+        <nav class="navegacion-principal">
+            <a href="../index.html" class="nav-enlace">Inicio</a>
+            <div class="selecciones-idioma">
+                <div id="selected-language">
+                    <img src="../img/gifs/ardilla_sinfondo.gif" alt="Bandera Española">
+                    <span class="texto-idioma">Español</span>
+                </div>
+                <div class="oportunidades">
+                    <div class="oportunidad" data-value="en">
+                        <img src="img/Banderas/usa.png" alt="Bandera USA">
+                        <span>English</span>
+                    </div>
+                    <div class="oportunidad" data-value="cn">
+                        <img src="img/Banderas/china.png" alt="Bandera China">
+                        <span>普通话</span>
+                    </div>
+                    <div class="oportunidad" data-value="ru">
+                        <img src="img/Banderas/rusia.png" alt="Bandera Rusia">
+                        <span>Русский</span>
+                    </div>
+                </div>
+            </div>
+            <a href="../login/login.html" class="boton-sesion">Iniciar Sesión</a>
+            <a href="../login/login.html" class="boton-sesion-mobile">Iniciar Sesión</a>
+        </nav>
+        <div class="contenedor-modo">
+            <input type="checkbox" id="interruptor-modo">
+            <label for="interruptor-modo" class="etiqueta-modo">
+                <span class="icono-sol">☀️</span>
+                <span class="interruptor"></span>
+                <span class="icono-luna">🌙</span>
+            </label>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto" id="contacto">
+            <h3>Contáctanos</h3>
+            <p>¿Tienes alguna pregunta o quieres colaborar con nosotros? Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+            <form id="contact-form" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <p id="form-message" class="form-message hidden"></p>
+        </section>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-con">
+                <div class="footer-logo">
+                    <img src="../img/Proyecto nuevo.png" alt="Logo LifeHunter" class="logo-img">
+                </div>
+                <div>
+                    <button id="btn-dato">¡Curiosidad animal!</button>
+                    <div id="animal-container" class="hidden">
+                        <img id="animal-img" src="" alt="">
+                        <p id="dato-curioso"></p>
+                    </div>
+                </div>
+                <div class="footer-communidad">
+                    <h3 class="community-titilo">Comunidad</h3>
+                    <div class="redes-sociales">
+                        <a href="https://facebook.com" class="red-social"><img src="../img/facebookblanco.png " alt="Facebook" class="icono-social"></a>
+                        <a href="https://twitter.com" class="red-social"><img src="../img/xblanco.png" alt="Twitter" class="icono-social"></a>
+                        <a href="https://instagram.com" class="red-social"><img src="../img/instagramblanco.png" alt="Instagram" class="icono-social"></a>
+                        <a href="https://linkedin.com" class="red-social"><img src="../img/discordblanco.png" alt="LinkedIn" class="icono-social"></a>
+                        <a href="https://youtube.com" class="red-social"><img src="../img/youtubeblanco.png" alt="YouTube" class="icono-social"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="lugar">
+                    <p>Puedes encontrarnos en:</p>
+                    <a href="https://maps.google.com/?q=Av.+Nicolás+de+Piérola+1221,+Trujillo+13001" target="_blank">Av. Nicolás de Piérola 1221, Trujillo 13001</a>
+                </div>
+                <div class="contacta">
+                    <a href="../SiteMap/sitemap.html">Mapa del sitio</a>
+                </div>
+                <div class="telefono">
+                    <p>Teléfono:</p>
+                    <a href="tel:+51910425708">+51 910425708</a>
+                </div>
+            </div>
+            <hr class="linea-dividir">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

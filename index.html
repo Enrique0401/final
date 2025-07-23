@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeHunter - PáginaPrincipal</title>
+  <link rel="shortcut icon" href="img/logo1png.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/logo.jpg" alt="Logo LifeHunter">
+    </a>
+    <h1 class="tituloPrincipal">LifeHunter</h1>
+    <nav class="navegacion-principal">
+      <a href="#" class="nav-enlace">Inicio</a>
+      <a href="#explorar" class="nav-enlace">Explorar</a>
+      <a href="#nosotros" class="nav-enlace">Nosotros</a>
+
+      
+      <div class="selecciones-idioma">
+        <button id="selected-language">
+          <img src="img/gifs/castor_sinfondo.gif " alt="Icon" />
+          <div class="texto-idioma">Español</div>
+        </button>
+        <div class="oportunidades">
+          <div class="oportunidad" data-value="en">
+            <img src="img/gifs/ardilla_sinfondo.gif" alt="English">
+            <div class="texto-idioma">English</div>
+          </div>
+          <div class="oportunidad" data-value="cn">
+            <img src="img/gifs/cocod_sinfondo.gif" alt="Mandarin Chinese">
+            <div class="texto-idioma">普通话</div>
+          </div>
+          <div class="oportunidad" data-value="ru">
+            <img src="img/gifs/zebra_sinfondo.gif" alt="Russian">
+            <div class="texto-idioma">Русский</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="login/login.html" class="boton-sesion-mobile">Iniciar Sesión</a>
+    </nav>
+    <a href="login/login.html" class="boton-sesion iniciarSesion-btn">Iniciar Sesión</a>
+    <div class="contenedor-modo">
+      <input type="checkbox" id="interruptor-modo">
+      <label for="interruptor-modo" class="etiqueta-modo">
+        <span class="icono-sol">☀️</span>
+        <span class="interruptor"></span>
+        <span class="icono-luna">🌙</span>
+      </label>
+    </div>
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <div class="contenedor-reinos">
+        <div class="arriba">
+          <div class="card-reino">
+            <a href="ReinoAnimal/Animal.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="zorro" alt="Animal"></div>
+              <h3 class="card-titulo">Reino Animal</h3>
+            </a>
+          </div>
+          <div class="card-reino">
+            <a href="ReinoPlantae/Plantae.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="planta" alt="Vegetal"></div>
+              <h3 class="card-titulo">Reino Plantae</h3>
+            </a>
+          </div>
+          <div class="card-reino">
+            <a href="ReinoFungi 2/Fungi2.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="champinon" alt="Fungi"></div>
+              <h3 class="card-titulo">Reino Fungi</h3>
+            </a>
+          </div>
+        </div>
+        <div class="abajo">
+          <div class="card-reino">
+            <a href="#" class="card-enlace">
+              <div class="imagen-tarjeta" id="alga" alt="Fungi"></div>
+              <h3 class="card-titulo">Reino Protista</h3>
+            </a>
+          </div>
+          <div class="card-reino">
+            <a href="ReinoMonera/Monera.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="bacteria" alt="Fungi"></div>
+              <h3 class="card-titulo">Reino Monera</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrusel">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Aquí se insertarán dinámicamente las imágenes -->
+        </div>
+      </div>
+      <div class="controls">
+        <button id="decreaseSpeedBtn" class="control-carousel">-</button>
+        <button id="pauseBtn">❚❚</button>
+        <button id="increaseSpeedBtn" class="control-carousel">+</button>
+        <span id="speedDisplay" class="carousel-speed-display">x2</span>
+      </div>
+
+      <script src="script.js"></script>
+    </section>
+
+
+    <section class="explorar" id="explorar">
+      <hr>
+      <h3>Explorar</h3>
+      <h4>¿Qué son los reinos de los seres vivos?</h4>
+      <p>Los reinos de los seres vivos son una forma de clasificar y organizar a todos los organismos que habitan
+        nuestro planeta, agrupándolos según características comunes como su estructura celular, forma de
+        alimentación, capacidad de movimiento y tipo de reproducción.
+
+        Esta clasificación permite entender mejor la enorme diversidad biológica que existe, ya que cada reino
+        reúne a organismos que comparten rasgos esenciales y se diferencian claramente de los de otros grupos.
+        Actualmente, los seres vivos se dividen en seis grandes reinos: Animalia, Plantae, Fungi, Protista,
+        Monera y Archaea.
+
+        Conocer los reinos es fundamental para comprender cómo funciona la vida en la Tierra, cómo interactúan
+        los organismos entre sí y cuál es su papel en los ecosistemas. En LifeHunter, te invitamos a explorar
+        cada uno de estos reinos y descubrir la asombrosa variedad de formas de vida que nos rodea.</p>
+
+      <h4>Descripción de los reinos</h4>
+      <ul>
+        <li>Reino Animal:</li>
+        <p>El Reino Animal agrupa a todos los organismos multicelulares que se alimentan de otros seres vivos
+          para obtener energía, ya sea cazando, pastando o descomponiendo materia orgánica. Se caracterizan
+          por su capacidad de movimiento voluntario, órganos sensoriales desarrollados y reproducción
+          predominantemente sexual. En este reino se encuentran desde diminutos insectos hasta complejos
+          mamíferos, incluyendo peces, aves, reptiles, anfibios y humanos, todos desempeñando funciones
+          esenciales en los ecosistemas.</p>
+        <li>Reino Plantae</li>
+        <p>El Reino Plantae está formado por organismos multicelulares, autótrofos y fotosintéticos, capaces de
+          fabricar su propio alimento a partir de la luz solar, el agua y el dióxido de carbono. Las plantas
+          no pueden desplazarse, pero son vitales para el equilibrio ambiental, ya que producen oxígeno y
+          sirven de alimento y refugio para múltiples especies. Aquí se incluyen árboles, arbustos, hierbas,
+          musgos y helechos, cuya diversidad permite el funcionamiento de ecosistemas terrestres y acuáticos.
+        </p>
+        <li>Reino Fungi</li>
+        <p>El Reino Fungi comprende organismos que obtienen nutrientes descomponiendo materia orgánica, actuando
+          como recicladores naturales en los ecosistemas. Aunque algunos se asemejan a plantas, carecen de
+          clorofila y no realizan fotosíntesis. En este grupo se encuentran los hongos, levaduras y mohos,
+          esenciales para procesos biológicos como la descomposición, fermentación y producción de
+          antibióticos, además de tener importantes usos en la gastronomía y la medicina.</p>
+        <li>Reino Protista</li>
+        <p>El Reino Protista reúne organismos eucariotas, en su mayoría unicelulares, que no encajan en los
+          reinos animal, vegetal o fungi. Es un grupo muy diverso, con especies que pueden parecerse a
+          animales, plantas o hongos, y que viven mayormente en ambientes acuáticos o húmedos. Entre ellos se
+          encuentran las algas, protozoos y mohos mucilaginosos, algunos de los cuales desempeñan funciones
+          ecológicas importantes, mientras otros pueden causar enfermedades.</p>
+        <li>Reino Monera</li>
+        <p>El Reino Monera incluye a los organismos unicelulares procariotas, es decir, aquellos sin núcleo
+          definido y con estructura celular simple. Aquí se agrupan las bacterias y cianobacterias (antes
+          llamadas algas verdeazuladas), presentes en casi todos los ambientes de la Tierra, desde aguas
+          termales hasta el intestino humano. Aunque muchas bacterias son esenciales para procesos como la
+          descomposición y la fijación de nitrógeno, otras pueden provocar enfermedades en plantas, animales y
+          personas.</p>
+      </ul>
+      <div class="videoContenedor">
+        <video class="video" src="img/videoplayback.mp4" controls></video>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <hr>
+      <h3>Sobre nosotros</h3>
+      <p>En LifeHunter creemos que el conocimiento sobre la vida que nos rodea debería estar al alcance de todos.
+        Por eso, hemos creado este espacio digital donde puedes explorar, aprender y asombrarte con la
+        diversidad de seres vivos que habitan nuestro planeta. Nuestra prioridad es brindarte información clara,
+        confiable y actualizada sobre los reinos biológicos, presentada de manera amigable y accesible.</p>
+      <h4>¿Quiénes somos?</h4>
+      <p>Somos un equipo apasionado por la ciencia, la educación y la tecnología. LifeHunter nace de la iniciativa
+        de estudiantes y profesionales comprometidos con la divulgación científica, con el objetivo de acercar
+        el conocimiento biológico a estudiantes, docentes y público en general, sin importar su nivel académico.
+        Aquí combinamos rigor científico con recursos digitales modernos para hacer del aprendizaje una
+        experiencia entretenida y significativa.</p>
+      <h4>Misión</h4>
+      <p>Facilitar el acceso a información científica confiable y actualizada sobre los reinos de los seres vivos,
+        promoviendo la educación ambiental y el interés por la biodiversidad en estudiantes y público general.
+      </p>
+      <h4>Visión</h4>
+      <p>Convertirnos en una de las principales plataformas educativas digitales de habla hispana sobre biología y
+        biodiversidad, reconocida por su calidad, precisión y capacidad de inspirar nuevas generaciones
+        interesadas en el estudio de la vida.</p>
+      <h4>¿Qué Ofrecemos?</h4>
+      <ul>
+        <li>Contenido educativo claro, actualizado y respaldado por fuentes científicas.</li>
+        <li>Resúmenes, artículos y fichas informativas sobre los reinos biológicos.</li>
+        <li>Recursos interactivos para reforzar el aprendizaje: quizzes, mapas conceptuales y material visual.
+        </li>
+        <li>Un espacio accesible y amigable para aprender sin complicaciones, estés donde estés.</li>
+        <li>Actualizaciones constantes con datos relevantes y descubrimientos recientes en el mundo de la
+          biología.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer-contenedor">
+    <div class="footer-contenido">
+      <div class="footer-con">
+        <div class="footer-logo">
+          <img src="img/Proyecto nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+        </div>
+
+        <button id="btn-dato">¡Curiosidad animal!</button>
+
+        <div id="animal-container" class="hidden">
+          <img id="animal-img" src="" alt="Animal animado">
+          <p id="dato-curioso"></p>
+        </div>
+
+        <div class="footer-communidad">
+          <h3 class="community-titilo">Comunidad</h3>
+          <div class="redes-sociales">
+            <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+              aria-label="Discord">
+              <img src="img/discordblanco.png" alt="Discord" class="icono-social">
+            </a>
+            <a href="https://www.instagram.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <img src="img/instagramblanco.png" alt="Instagram" class="icono-social">
+            </a>
+            <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube">
+              <img src="img/youtubeblanco.png" alt="YouTube" class="icono-social">
+            </a>
+            <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img src="img/xblanco.png" alt="Twitter" class="icono-social">
+            </a>
+            <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <img src="img/facebookblanco.png" alt="Facebook" class="icono-social">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="lugar">
+          <p>Puedes encontrarnos en:</p>
+          <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+            Trujillo 13001</a>
+        </div>
+        <div class="contacta">
+          <a href="Contactanos/contacto.html">Contáctanos</a> <br> <br>
+          <a href="SiteMap/sitemap.html">Mapa del sitio</a>
+        </div>
+        <div class="telefono">
+          <p>Teléfono:</p>
+          <a href="#">+51 910425708</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divide">
+      <hr class="linea-dividir">
+    </div>
+
+    <div class="copyright">
+      <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="codigo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseñoA.css">
+    <title>LifeHunter - Reino Animal</title>
+    <link rel="shortcut icon" href="imagenes/logo1png.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="header-logo-link">
+            <img src="../img/logo.jpg" alt="Logo LifeHunter" class="header-logo">
+        </a>
+        <h1 class="tituloPrincipal">LifeHunter</h1>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navegacion-principal">
+            <a href="../ReinoPlantae/Plantae.html" class="nav-enlace">Reino Plantae</a>
+            <a href="../ReinoFungi 2/Fungi2.html" class="nav-enlace">Reino Fungi</a>
+            <a href="#" class="nav-enlace">Reino Protista</a>
+            <a href="../ReinoMonera/Monera.html" class="nav-enlace">Reino Monera</a>
+        </nav>
+
+        <nav class="navegacion-principal">
+            <a href="../index.html" class="nav-enlace">Regresar</a>
+            <a href="../login/login.html" class="boton-sesion-mobile">Iniciar Sesión</a>
+        </nav>
+
+        <a href="../login/login.html" class="boton-sesion iniciarSesion-btn">Iniciar Sesión</a>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Reino Animal</h1>
+            <p>Encuentra información detallada sobre cualquier animal.</p>
+        </section>
+
+        <section class="options-section">
+            <div class="filters" id="filters">
+                <input type="text" placeholder="Buscar..." id="buscar" aria-label="Campo de búsqueda de animales">
+
+                <select id="Subfilo" aria-label="Filtrar por Subfilo">
+                    <option value="">Categoria</option>
+                    <option value="vertebrado">Vertebrado</option>
+                    <option value="invertebrado">Invertebrado</option>
+                </select>
+
+                <select id="Filo" aria-label="Filtrar por Filo">
+                    <option value="">Filo</option>
+                    <option value="artropodos">Artrópodos</option>
+                    <option value="cordados">Cordados</option>
+                    <option value="cnidarios">Cnidarios</option>
+                    <option value="moluscos">Moluscos</option>
+                </select>
+                <select id="clase" aria-label="Filtrar por Clase">
+                    <option value="">Clase</option>
+                    <option value="aracnidos">Arácnidos</option>
+                    <option value="mamiferos">Mamíferos</option>
+                    <option value="aves">Aves</option>
+                    <option value="reptiles">Reptiles</option>
+                    <option value="anfibios">Anfibios</option>
+                    <option value="insectos">Insectos</option>
+                    <option value="bivaldos">Bivaldos</option>
+                    <option value="anthozoa">Anthozoa</option>
+                    <option value="cefalopodos">Cefalópodos</option>
+                </select>
+                <select id="orden" aria-label="Filtrar por Orden">
+                    <option value="">Orden</option>
+                    <option value="carnivoros">Carnívoros</option>
+                    <option value="hervivoros">Herbívoros</option>
+                    <option value="omnivoros">Omnívoros</option>
+                    <option value="insectivoros">Insectívoros</option>
+                    <option value="detritivoros">Detritívoros</option>
+                    <option value="filtradores">Filtradores</option>
+                    <option value="crustacivoras">Crustacívoras</option>
+                </select>
+                <select id="reproduccion" aria-label="Filtrar por Reproduccion">
+                    <option value="">Reproducción</option>
+                    <option value="oviparos">Ovíparos</option>
+                    <option value="viviparos">Vivíparos</option>
+                    <option value="ovoviviparos">Ovovivíparos</option>
+                </select>
+                <button class="boton_reinicia">Reiniciar</button>
+            </div>
+        </section>
+
+        <section class="animal-grid">
+            <a href="BiografiaAnimal/BiografiaAbanico.html">
+                <div class="animal" data-nombre="abanico" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="insectivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen abanico" src="imagenes/Abanico.png" alt="Abanico">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AbanicoT.png"
+                            alt="Abanico Transparente">
+                        <div class="nombre">Abanico</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAbeja.html">
+                <div class="animal" data-nombre="abeja" data-subfilo="invertebrado" data-filo="artropodos"
+                    data-clase="insectos" data-orden="hervivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen abeja" src="imagenes/Abeja.png" alt="Abeja">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AbejaT.png"
+                            alt="Abeja Transparente">
+                        <div class="nombre">Abeja</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAbejorro.html">
+                <div class="animal" data-nombre="abejorro" data-subfilo="invertebrado" data-filo="artropodos"
+                    data-clase="insectos" data-orden="hervivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen abejorro" src="imagenes/Abejorro.png" alt="Abejorro">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AbejorroT.png"
+                            alt="Abejorro Transparente">
+                        <div class="nombre">Abejorro</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAbubilla.html">
+                <div class="animal" data-nombre="abubilla" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="insectivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen abubilla" src="imagenes/Abubilla.jpg" alt="Abubilla">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AbubillaT.png"
+                            alt="Abubilla Transparente">
+                        <div class="nombre">Abubilla</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAcaro.html">
+                <div class="animal" data-nombre="acaro" data-subfilo="invertebrado" data-filo="artropodos"
+                    data-clase="aracnidos" data-orden="detritivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen ácaro" src="imagenes/Ácaro.jpg" alt="Ácaro">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ÁcaroT.png"
+                            alt="Ácaro Transparente">
+                        <div class="nombre">Ácaro</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAddax.html">
+                <div class="animal" data-nombre="addax" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="hervivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen addax" src="imagenes/Addax.jpg" alt="Addax">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AddaxT.png"
+                            alt="Addax Transparente">
+                        <div class="nombre">Addax</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAgaporni.html">
+                <div class="animal" data-nombre="agaporni" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="omnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen agaporni" src="imagenes/Agaporni.jpg" alt="Agaporni">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AgaporniT.png"
+                            alt="Agaporni Transparente">
+                        <div class="nombre">Agaporni</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAguila.html">
+                <div class="animal" data-nombre="aguila" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen aguila" src="imagenes/Aguila.jpg" alt="Águila">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AguilaT.png"
+                            alt="Águila Transparente">
+                        <div class="nombre">Águila</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAjolote.html">
+                <div class="animal" data-nombre="ajolote" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="anfibios" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen ajolote" src="imagenes/Ajolote.jpg" alt="Ajolote">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AjoloteT.png"
+                            alt="Ajolote Transparente">
+                        <div class="nombre">Ajolote</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlacran.html">
+                <div class="animal" data-nombre="alacran" data-subfilo="invertebrado" data-filo="artropodos"
+                    data-clase="aracnidos" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen alacran" src="imagenes/Alacran.png" alt="Alacrán">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlacranT.png"
+                            alt="Alacrán Transparente">
+                        <div class="nombre">Alacrán</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlbatros.html">
+                <div class="animal" data-nombre="albatros" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen albatros" src="imagenes/Albatros.png" alt="Albatros">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlbatrosT.png"
+                            alt="Albatros Transparente">
+                        <div class="nombre">Albatros</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlcaravan.html">
+                <div class="animal" data-nombre="alcaraván" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="insectivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen alcaraván" src="imagenes/Alcaraván.jpeg" alt="Alcaraván">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlcaravánT.jpg"
+                            alt="Alcaraván Transparente">
+                        <div class="nombre">Alcaraván</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlce.html">
+                <div class="animal" data-nombre="alce" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="hervivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen alce" src="imagenes/Alce.jpg" alt="Alce">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlceT.png" alt="Alce Transparente">
+                        <div class="nombre">Alce</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlcotan.html">
+                <div class="animal" data-nombre="alcotán" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen alcotán" src="imagenes/Alcotán.jpg" alt="Alcotán">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlcotánT.png"
+                            alt="Alcotán Transparente">
+                        <div class="nombre">Alcotán</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAligator.html">
+                <div class="animal" data-nombre="aligátor" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="reptiles" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen aligátor" src="imagenes/Aligátor.jpg" alt="Aligátor">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AligátorT.png"
+                            alt="Aligátor Transparente">
+                        <div class="nombre">Aligátor</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlmeja.html">
+                <div class="animal" data-nombre="almeja" data-subfilo="invertebrado" data-filo="moluscos"
+                    data-clase="bivaldos" data-orden="filtradores" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen almeja" src="imagenes/Almeja.jpg" alt="Almeja">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlmejaT.png"
+                            alt="Almeja Transparente">
+                        <div class="nombre">Almeja</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAlpaca.html">
+                <div class="animal" data-nombre="alpaca" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="hervivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen alapaca" src="imagenes/Alpaca.png" alt="Alpaca">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AlpacaT.png"
+                            alt="Alpaca Transparente">
+                        <div class="nombre">Alpaca</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAnaconda.html">
+                <div class="animal" data-nombre="anaconda" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="reptiles" data-orden="carnivoros" data-reproduccion="ovoviviparos">
+                    <article class="animal-card">
+                        <img class="imagen anaconda" src="imagenes/Anaconda.png" alt="Anaconda">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AnacondaT.png"
+                            alt="Anaconda Transparente">
+                        <div class="nombre">Anaconda</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAnade.html">
+                <div class="animal" data-nombre="anade" data-subfilo="vertebrado" data-filo="cordados" data-clase="aves"
+                    data-orden="omnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen anade" src="imagenes/Anade.jpg" alt="Anade">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AnadeT.png"
+                            alt="Anade Transparente">
+                        <div class="nombre">Anade</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAnemonaDeMar.html">
+                <div class="animal" data-nombre="anémona de mar" data-subfilo="invertebrado" data-filo="cnidarios"
+                    data-clase="anthozoa" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen anémonaDeMar" src="imagenes/AnémonaDeMar.jpg" alt="Anémona de Mar">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AnémonaDeMarT.png"
+                            alt="Anémona de Mar Transparente">
+                        <div class="nombre">Anémona de Mar</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAnolis.html">
+                <div class="animal" data-nombre="anolis" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="reptiles" data-orden="insectivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen anolis" src="imagenes/Anolis.png" alt="Anolis">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AnolisT.png"
+                            alt="Anolis Transparente">
+                        <div class="nombre">Anolis</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAntilope.html">
+                <div class="animal" data-nombre="antílope" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="hervivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen antílope" src="imagenes/Antílope.jpg" alt="Antílope">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AntílopeT.png"
+                            alt="Antílope Transparente">
+                        <div class="nombre">Antílope</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAraguato.html">
+                <div class="animal" data-nombre="araguato" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="hervivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen araguato" src="imagenes/Araguato.jpg" alt="Araguato">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AraguatoT.png"
+                            alt="Araguato Transparente">
+                        <div class="nombre">Araguato</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAraña.html">
+                <div class="animal" data-nombre="araña" data-subfilo="invertebrado" data-filo="artropodos"
+                    data-clase="aracnidos" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen araña" src="imagenes/Araña.jpg" alt="Araña">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ArañaT.png"
+                            alt="Araña Transparente">
+                        <div class="nombre">Araña</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaArdilla.html">
+                <div class="animal" data-nombre="ardilla" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="omnivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen alapaca" src="imagenes/Ardilla.jpg" alt="Ardilla">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ArdillaT.png"
+                            alt="Ardilla Transparente">
+                        <div class="nombre">Ardilla</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaArgonauta.html">
+                <div class="animal" data-nombre="argonauta" data-subfilo="invertebrado" data-filo="moluscos"
+                    data-clase="cefalopodos" data-orden="carnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen argonauta" src="imagenes/Argonauta.jpg" alt="Argonauta">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ArgonautaT.png"
+                            alt="Argonauta Transparente">
+                        <div class="nombre">Argonauta</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaArmadillo.html">
+                <div class="animal" data-nombre="armadillo" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="omnivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen armadillo" src="imagenes/Armadillo.png" alt="Armadillo">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ArmadilloT.png"
+                            alt="Armadillo Transparente">
+                        <div class="nombre">Armadillo</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaArmiño.html">
+                <div class="animal" data-nombre="armiño" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="carnivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen armiño" src="imagenes/Armiño.jpg" alt="Armiño">
+                        <img class="imagen-transparente" src="imagenes/Transparente/ArmiñoT.png"
+                            alt="Armiño Transparente">
+                        <div class="nombre">Armiño</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAsno.html">
+                <div class="animal" data-nombre="asno" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="mamiferos" data-orden="hervivoros" data-reproduccion="viviparos">
+                    <article class="animal-card">
+                        <img class="imagen asno" src="imagenes/Asno.jpg" alt="Asno">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AsnoT.png" alt="Asno Transparente">
+                        <div class="nombre">Asno</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAtelopus.html">
+                <div class="animal" data-nombre="atelopus" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="anfibios" data-orden="insectivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen atelopus" src="imagenes/Atelopus.jpg" alt="Atelopus">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AtelopusT.png"
+                            alt="Atelopus Transparente">
+                        <div class="nombre">Atelopus</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAvestruz.html">
+                <div class="animal" data-nombre="avestruz" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="omnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen avestruz" src="imagenes/Avestruz.jpg" alt="Avestruz">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AvestruzT.png"
+                            alt="Avestruz Transparente">
+                        <div class="nombre">Avestruz</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAvispa.html">
+                <div class="animal" data-nombre="avispa" data-subfilo="invertebrado" data-filo="artropodos"
+                    data-clase="insectos" data-orden="omnivoros" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen avispa" src="imagenes/Avispa.png" alt="Avispa">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AvispaT.png"
+                            alt="Avispa Transparente">
+                        <div class="nombre">Avispa</div>
+                    </article>
+                </div>
+            </a>
+            <a href="BiografiaAnimal/BiografiaAvoceta.html">
+                <div class="animal" data-nombre="avoceta" data-subfilo="vertebrado" data-filo="cordados"
+                    data-clase="aves" data-orden="crustacivoras" data-reproduccion="oviparos">
+                    <article class="animal-card">
+                        <img class="imagen avoceta" src="imagenes/Avoceta.jpg" alt="Avoceta">
+                        <img class="imagen-transparente" src="imagenes/Transparente/AvocetaT.png"
+                            alt="Avoceta Transparente">
+                        <div class="nombre">Avoceta</div>
+                    </article>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer-contenedor">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <img src="imagenes/Proyecto nuevo.png" alt="Logo de LifeHunter" class="logo-img">
+            </div>
+
+            <button id="btn-dato">¡Curiosidad animal!</button>
+
+            <div id="animal-container" class="hidden">
+                <img id="animal-img" src="" alt="Animal animado">
+                <p id="dato-curioso"></p>
+            </div>
+
+            <div class="footer-communidad">
+                <h3 class="community-titilo">Comunidad</h3>
+                <div class="redes-sociales">
+                    <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Discord">
+                        <img src="../img/discordblanco.png" alt="Discord" class="icono-social">
+                    </a>
+                    <a href="https://www.instagram.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <img src="../img/instagramblanco.png" alt="Instagram" class="icono-social">
+                    </a>
+                    <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="YouTube">
+                        <img src="../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+                    </a>
+                    <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter">
+                        <img src="../img/xblanco.png" alt="Twitter" class="icono-social">
+                    </a>
+                    <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <img src="../img/facebookblanco.png" alt="Facebook" class="icono-social">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="lugar">
+                <p>Puedes encontrarnos en:</p>
+                <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221,
+                    Trujillo 13001</a>
+            </div>
+            <div class="contacta">
+                <a href="#">Contáctanos</a> <br> <br>
+                <a href="../SiteMap/sitemap.html">Mapa del sitio</a>
+            </div>
+            <div class="telefono">
+                <p>Teléfono:</p>
+                <a href="#">+51 910425708</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-divide">
+            <hr class="linea-dividir">
+        </div>
+
+        <div class="copyright">
+            <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="busquedaAnimal.js"></script>
+</body>
+
+</html>
