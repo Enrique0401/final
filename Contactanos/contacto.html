@@ -6,50 +6,37 @@
     <title>Contacto - LifeHunter</title>
     <link rel="stylesheet" href="contacto.css">
     <script src="contacto.js" defer></script>
+    <link rel="stylesheet" href="../css/session.css">
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../img/logo1png.png" alt="Logo LifeHunter"></a>
+        <a href="index.html">
+          <img src="../img/logo.jpg" alt="Logo LifeHunter">
+        </a>
         <h1 class="tituloPrincipal">LifeHunter</h1>
         <nav class="navegacion-principal">
-            <a href="../index.html" class="nav-enlace">Inicio</a>
-            <div class="selecciones-idioma">
-                <div id="selected-language">
-                    <img src="../img/gifs/ardilla_sinfondo.gif" alt="Bandera Española">
-                    <span class="texto-idioma">Español</span>
-                </div>
-                <div class="oportunidades">
-                    <div class="oportunidad" data-value="en">
-                        <img src="img/Banderas/usa.png" alt="Bandera USA">
-                        <span>English</span>
-                    </div>
-                    <div class="oportunidad" data-value="cn">
-                        <img src="img/Banderas/china.png" alt="Bandera China">
-                        <span>普通话</span>
-                    </div>
-                    <div class="oportunidad" data-value="ru">
-                        <img src="img/Banderas/rusia.png" alt="Bandera Rusia">
-                        <span>Русский</span>
-                    </div>
-                </div>
-            </div>
-            <a href="../login/login.html" class="boton-sesion">Iniciar Sesión</a>
-            <a href="../login/login.html" class="boton-sesion-mobile">Iniciar Sesión</a>
+          <a href="../index.html" class="nav-enlace">Inicio</a>
+    
+          <div class="boton-sesion-mobile">Iniciar Sesión</div>
         </nav>
+    
+        <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+        
         <div class="contenedor-modo">
-            <input type="checkbox" id="interruptor-modo">
-            <label for="interruptor-modo" class="etiqueta-modo">
-                <span class="icono-sol">☀️</span>
-                <span class="interruptor"></span>
-                <span class="icono-luna">🌙</span>
-            </label>
+          <input type="checkbox" id="interruptor-modo">
+          <label for="interruptor-modo" class="etiqueta-modo">
+            <span class="icono-sol">☀️</span>
+            <span class="interruptor"></span>
+            <span class="icono-luna">🌙</span>
+          </label>
         </div>
+    
         <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
+      </header>
 
     <main>
         <section class="contacto" id="contacto">
@@ -109,5 +96,7 @@
             <p class="copyright-texto">LifeHunter © 2025 Grupo 1. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="../js/session.js"></script>
 </body>
 </html>

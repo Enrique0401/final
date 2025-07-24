@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeHunter - MainPage</title>
+  <link rel="shortcut icon" href="../img/logo1png.png" type="image/x-icon">
+  <link rel="stylesheet" href="../estilo.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../css/session.css">
+</head>
+
+<body>
+  <header>
+    <a href="indexingl.html">
+      <img src="../img/logo.jpg" alt="LifeHunter Logo">
+    </a>
+    <h1 class="tituloPrincipal">LifeHunter</h1>
+    <nav class="navegacion-principal">
+      <a href="#" class="nav-enlace">Home</a>
+      <a href="#explorar" class="nav-enlace">Explore</a>
+      <a href="#nosotros" class="nav-enlace">About Us</a>
+
+      <div class="selecciones-idioma">
+        <button id="selected-language">
+          <img src="../img/gifs/ardilla_sinfondo.gif " alt="Icon" />
+          <div class="texto-idioma">English </div>
+        </button>
+        <div class="oportunidades">
+          <div class="oportunidad" data-value="es">
+            <img src="../img/gifs/castor_sinfondo.gif" alt="English">
+            <div class="texto-idioma">Spanish</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="boton-sesion-mobile">Log In</div>
+    </nav>
+
+    <div class="boton-sesion iniciarSesion-btn">Log In</div>
+
+    <div class="contenedor-modo">
+      <input type="checkbox" id="interruptor-modo">
+      <label for="interruptor-modo" class="etiqueta-modo">
+        <span class="icono-sol">☀️</span>
+        <span class="interruptor"></span>
+        <span class="icono-luna">🌙</span>
+      </label>
+    </div>
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <div class="contenedor-reinos">
+        <div class="arriba">
+          <div class="card-reino">
+            <a href="../ReinoAnimal/Animal.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="zorro" alt="Animal"></div>
+              <h3 class="card-titulo">Animal Kingdom</h3>
+            </a>
+          </div>
+          <div class="card-reino">
+            <a href="../ReinoPlantae/Plantae.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="planta" alt="Vegetal"></div>
+              <h3 class="card-titulo">Plant Kingdom</h3>
+            </a>
+          </div>
+          <div class="card-reino">
+            <a href="../ReinoFungi 2/Fungi2.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="champinon" alt="Fungi"></div>
+              <h3 class="card-titulo">Fungi Kingdom</h3>
+            </a>
+          </div>
+        </div>
+        <div class="abajo">
+          <div class="card-reino">
+            <a href="#" class="card-enlace">
+              <div class="imagen-tarjeta" id="alga" alt="Fungi"></div>
+              <h3 class="card-titulo">Protista Kingdom</h3>
+            </a>
+          </div>
+          <div class="card-reino">
+            <a href="../ReinoMonera/Monera.html" class="card-enlace">
+              <div class="imagen-tarjeta" id="bacteria" alt="Fungi"></div>
+              <h3 class="card-titulo">Monera Kingdom</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrusel">
+      <div class="carousel-container">
+        <div class="carousel-track"></div>
+      </div>
+      <div class="controls">
+        <button id="decreaseSpeedBtn" class="control-carousel">-</button>
+        <button id="pauseBtn">❚❚</button>
+        <button id="increaseSpeedBtn" class="control-carousel">+</button>
+        <span id="speedDisplay" class="carousel-speed-display">x2</span>
+      </div>
+
+      <script src="../script.js"></script>
+    </section>
+
+    <section class="explorar" id="explorar">
+      <hr>
+      <h3>Explore</h3>
+      <h4>What are the kingdoms of living beings?</h4>
+      <p>The kingdoms of living beings are a way to classify and organize all organisms on our planet, grouping them by common characteristics such as cellular structure, way of feeding, movement, and reproduction.
+
+        This classification helps us better understand biological diversity, as each kingdom gathers organisms that share essential traits and differ clearly from others. Currently, living beings are divided into six major kingdoms: Animalia, Plantae, Fungi, Protista, Monera, and Archaea.
+
+        Knowing the kingdoms is essential to understanding how life on Earth works, how organisms interact, and their roles in ecosystems. At LifeHunter, we invite you to explore each of these kingdoms and discover the amazing variety of life that surrounds us.</p>
+
+      <h4>Description of the kingdoms</h4>
+      <ul>
+        <li>Animal Kingdom:</li>
+        <p>This kingdom includes all multicellular organisms that obtain energy by consuming other living beings—through hunting, grazing, or decomposition. They move voluntarily, have developed sensory organs, and mostly reproduce sexually. This group includes insects, fish, birds, reptiles, amphibians, mammals, and humans.</p>
+
+        <li>Plant Kingdom</li>
+        <p>Composed of multicellular, autotrophic, photosynthetic organisms that make their own food from sunlight, water, and carbon dioxide. Although they can't move, plants are vital for ecosystems—producing oxygen and serving as food and shelter for many species. It includes trees, shrubs, herbs, mosses, and ferns.</p>
+
+        <li>Fungi Kingdom</li>
+        <p>Fungi absorb nutrients by breaking down organic matter, acting as natural recyclers. They don’t perform photosynthesis. This group includes mushrooms, yeasts, and molds, which are key to decomposition, fermentation, medicine (antibiotics), and even gastronomy.</p>
+
+        <li>Protista Kingdom</li>
+        <p>This diverse kingdom includes mostly unicellular eukaryotes that don’t fit into the animal, plant, or fungi kingdoms. Many live in water. Some resemble animals, others plants or fungi. It includes algae, protozoa, and slime molds—some helpful, others disease-causing.</p>
+
+        <li>Monera Kingdom</li>
+        <p>This group includes unicellular prokaryotic organisms without a defined nucleus, like bacteria and cyanobacteria. They're found everywhere—from hot springs to our intestines. While many are essential for processes like decomposition and nitrogen fixation, others can cause disease.</p>
+      </ul>
+      <div class="videoContenedor">
+        <video class="video" src="../img/videoplayback.mp4" controls></video>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <hr>
+      <h3>About Us</h3>
+      <p>At LifeHunter, we believe that knowledge about life around us should be accessible to everyone. That’s why we’ve created this digital space where you can explore, learn, and be amazed by the diversity of living beings on our planet. Our priority is to provide clear, reliable, and up-to-date information about biological kingdoms in a friendly and accessible way.</p>
+
+      <h4>Who are we?</h4>
+      <p>We are a team passionate about science, education, and technology. LifeHunter was born from the initiative of students and professionals committed to scientific outreach, aiming to bring biological knowledge to students, teachers, and the general public—regardless of academic background.</p>
+
+      <h4>Mission</h4>
+      <p>To facilitate access to reliable, updated scientific information about the kingdoms of living beings, promoting environmental education and interest in biodiversity.</p>
+
+      <h4>Vision</h4>
+      <p>To become one of the leading Spanish-language digital educational platforms on biology and biodiversity—recognized for quality, accuracy, and inspiring new generations to study life.</p>
+
+      <h4>What We Offer</h4>
+      <ul>
+        <li>Clear, updated, and science-backed educational content.</li>
+        <li>Summaries, articles, and fact sheets about biological kingdoms.</li>
+        <li>Interactive tools to enhance learning: quizzes, concept maps, and visuals.</li>
+        <li>An accessible and friendly space to learn wherever you are.</li>
+        <li>Constant updates with relevant data and recent discoveries in biology.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer-contenedor">
+    <div class="footer-contenido">
+      <div class="footer-con">
+        <div class="footer-logo">
+          <img src="../img/Proyecto nuevo.png" alt="LifeHunter Logo" class="logo-img">
+        </div>
+
+        <button id="btn-dato">Animal Fact!</button>
+
+        <div id="animal-container" class="hidden">
+          <img id="animal-img" src="" alt="Animated Animal">
+          <p id="dato-curioso"></p>
+        </div>
+
+        <div class="footer-communidad">
+          <h3 class="community-titilo">Community</h3>
+          <div class="redes-sociales">
+            <a href="https://discord.com/" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+              <img src="../img/discordblanco.png" alt="Discord" class="icono-social">
+            </a>
+            <a href="https://www.instagram.com/" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="../img/instagramblanco.png" alt="Instagram" class="icono-social">
+            </a>
+            <a href="https://www.youtube.com/" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <img src="../img/youtubeblanco.png" alt="YouTube" class="icono-social">
+            </a>
+            <a href="https://x.com/" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <img src="../img/xblanco.png" alt="Twitter" class="icono-social">
+            </a>
+            <a href="https://www.facebook.com/" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src="../img/facebookblanco.png" alt="Facebook" class="icono-social">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="lugar">
+          <p>You can find us at:</p>
+          <a href="https://maps.app.goo.gl/hSpv9RwdGKMLmeew6" target="_blank">Av. Nicolás de Piérola 1221, Trujillo 13001</a>
+        </div>
+        <div class="contacta">
+          <a href="Contactanos/contacto.html">Contact Us</a> <br><br>
+          <a href="SiteMap/sitemap.html">Site Map</a>
+        </div>
+        <div class="telefono">
+          <p>Phone:</p>
+          <a href="#">+51 910425708</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divide">
+      <hr class="linea-dividir">
+    </div>
+
+    <div class="copyright">
+      <p class="copyright-texto">LifeHunter © 2025 Group 1. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="codigo.js"></script>
+  <script src="../js/session.js"></script>
+
+</body>
+
+</html>

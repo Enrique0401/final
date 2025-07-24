@@ -82,7 +82,7 @@ header img {
 .boton-sesion {
     display: none;
     padding: 8px 15px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 20px;
@@ -93,14 +93,14 @@ header img {
 
 .boton-sesion:hover {
     background: transparent;
-    border-color: #ff4444;
+    border-color: transparent;
 }
 
 /* Estilo celular para boton "Iniciar Sesión"*/
 .boton-sesion-mobile {
     display: none;
     padding: 10px 20px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -799,6 +799,7 @@ body.light-mode::-webkit-scrollbar-thumb:hover {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #bd0404;
 }
+
 
 
 /* Estilo para Escritorio - CORREGIDO PARA VISIBILIDAD COMPLETA */

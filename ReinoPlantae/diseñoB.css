@@ -87,7 +87,7 @@ header {
 .boton-sesion-mobile {
     display: none;
     padding: 10px 20px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -103,10 +103,6 @@ header {
     display: block;
 }
 
-.boton-sesion-mobile:hover {
-    background: transparent;
-    border-color: #ff4444;
-}
 
 
 .boton-sesion {
@@ -564,7 +560,7 @@ input[type="text"]:hover {
     .boton-sesion {
         display: inline-block;
         padding: 10px 25px;
-        background: #ff4444;
+        background: transparent;
         color: #fff;
         text-decoration: none;
         border-radius: 25px;
@@ -572,11 +568,6 @@ input[type="text"]:hover {
         transition: all 0.3s ease;
         border: 2px solid transparent;
         margin-left: 20px;
-    }
-
-    .boton-sesion:hover {
-        background: transparent;
-        border-color: #ff4444;
     }
 
     .boton-sesion-mobile {

@@ -265,13 +265,7 @@ options.forEach(option => {
     // Redirige según idioma seleccionado
     switch (selectedLang) {
       case 'en':
-        window.location.href = '../ProgramacionWEB Inglés/index.html';
-        break;
-      case 'cn':
-        window.location.href = '../ProgramacionWEB Chino/index.html';
-        break;
-      case 'ru':
-        window.location.href = '../ProgramacionWEB Ruso/index.html';
+        window.location.href = 'idiomas/indexingl.html';
         break;
       default:
         window.location.href = 'index.html';

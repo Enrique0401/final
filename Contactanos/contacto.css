@@ -81,7 +81,7 @@ header img {
 .boton-sesion {
     display: none;
     padding: 8px 15px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 20px;
@@ -90,15 +90,11 @@ header img {
     border: 2px solid transparent;
 }
 
-.boton-sesion:hover {
-    background: transparent;
-    border-color: #ff4444;
-}
 
 .boton-sesion-mobile {
     display: none;
     padding: 10px 20px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -113,10 +109,6 @@ header img {
     display: block;
 }
 
-.boton-sesion-mobile:hover {
-    background: transparent;
-    border-color: #ff4444;
-}
 
 .contenedor-modo {
     display: flex;
