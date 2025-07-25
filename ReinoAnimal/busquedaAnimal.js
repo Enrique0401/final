@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const claseSelect = document.getElementById("clase");
     const ordenSelect = document.getElementById("orden");
     const reproduccionSelect = document.getElementById("reproduccion");
+    const habitatSelect = document.getElementById("habitat");
     const botonReiniciar = document.querySelector(".boton_reinicia");
     const animales = document.querySelectorAll(".animal-grid .animal"); // Cambiado para seleccionar todos los animales
     const menuToggle = document.querySelector(".menu-toggle");
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const selectedClase = claseSelect.value;
         const selectedOrden = ordenSelect.value;
         const selectedReproduccion = reproduccionSelect.value;
+        const selectedHabitat = habitatSelect.value;
 
         animales.forEach(animal => {
             const animalName = animal.dataset.nombre.toLowerCase();
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const animalClase = animal.dataset.clase;
             const animalOrden = animal.dataset.orden;
             const animalReproduccion = animal.dataset.reproduccion;
+            const animalHabitat = animal.dataset.habitat;
 
             const matchesSearch = searchText === "" || animalName.includes(searchText);
             const matchesSubfilo = selectedSubfilo === "" || animalSubfilo === selectedSubfilo;
@@ -32,9 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const matchesClase = selectedClase === "" || animalClase === selectedClase;
             const matchesOrden = selectedOrden === "" || animalOrden === selectedOrden;
             const matchesReproduccion = selectedReproduccion === "" || animalReproduccion === selectedReproduccion;
+            const matchesHabitat = selectedHabitat === "" || animalHabitat === selectedHabitat;
 
             if (matchesSearch && matchesSubfilo && matchesFilo && 
-                matchesClase && matchesOrden && matchesReproduccion) {
+                matchesClase && matchesOrden && matchesReproduccion && matchesHabitat) {
                 animal.style.display = "block";
                 
                 // Mostrar también el contenedor padre si es un <a>
@@ -59,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         claseSelect.value = "";
         ordenSelect.value = "";
         reproduccionSelect.value = "";
+        habitatSelect.value = "";
         applyFilters();
     });
 
@@ -68,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     claseSelect.addEventListener("change", applyFilters);
     ordenSelect.addEventListener("change", applyFilters);
     reproduccionSelect.addEventListener("change", applyFilters);
+    habitatSelect.addEventListener("change", applyFilters);
     inputBuscar.addEventListener("input", applyFilters);
 
     const getParametrosURL = () => {
@@ -78,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             clase: params.get('clase'),
             orden: params.get('orden'),
             reproduccion: params.get('reproduccion'),
+            habitat: params.get('habitat'),
         };
     };
 
@@ -89,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (filtros.clase) claseSelect.value = filtros.clase;
         if (filtros.orden) ordenSelect.value = filtros.orden;
         if (filtros.reproduccion) reproduccionSelect.value = filtros.reproduccion;
+        if (filtros.habitat) habitatSelect.value = filtros.habitat;
 
         applyFilters();
     };

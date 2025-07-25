@@ -14,63 +14,62 @@
       href="../../../../img/logo1png.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="../../../../css/session.css" />
 
-<style>
-    body {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-        var(--fondo);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
+    <style>
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+          var(--fondo);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
 
-    :root {
-      --fondo: url("../../cssFondo/Fondos/imagen7.jpg");
-    }
-  </style>
-  <style>
-  
+      :root {
+        --fondo: url("../../cssFondo/Fondos/imagen7.jpg");
+      }
+    </style>
+    <style>
+      .content {
+        max-width: 900px;
+        margin: auto;
+      }
 
-    .content {
-      max-width: 900px;
-      margin: auto;
-    }
+      h2 {
+        color: #ff4a4a;
+        border-bottom: 2px solid #ff4a4a;
+        padding-bottom: 0.4rem;
+        margin-top: 2rem;
+      }
 
-    h2 {
-      color: #ff4a4a;
-      border-bottom: 2px solid #ff4a4a;
-      padding-bottom: 0.4rem;
-      margin-top: 2rem;
-    }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+      }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.7rem;
-    }
+      .icono {
+        font-weight: bold;
+        color: #ffd700;
+      }
 
-    .icono {
-      font-weight: bold;
-      color: #ffd700;
-    }
+      ul {
+        text-align: left;
+        display: inline-block;
+        margin-top: 1rem;
+        padding-left: 0;
+      }
 
-    ul {
-      text-align: left;
-      display: inline-block;
-      margin-top: 1rem;
-      padding-left: 0;
-    }
+      ul li {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin-bottom: 0.5rem;
+      }
 
-    ul li {
-      font-size: 1.1rem;
-      line-height: 1.7rem;
-      margin-bottom: 0.5rem;
-    }
-
-    ul li span {
-      font-weight: bold;
-      color: #ffd700;
-    }
-  </style>
+      ul li span {
+        font-weight: bold;
+        color: #ffd700;
+      }
+    </style>
   </head>
 
   <body>
@@ -92,16 +91,12 @@
 
       <nav class="navegacion-principal">
         <a href="../../../Fungi2.html" class="nav-enlace">Regresar</a>
-        <a href="../../../../login/login.html" class="boton-sesion-mobile"
-          >Iniciar Sesión</a
-        >
+        <div class="boton-sesion-mobile">Iniciar Sión</div>
       </nav>
 
-      <a
-        href="../../../../login/login.html"
-        class="boton-sesion iniciarSesion-btn"
-        >Iniciar Sesión</a
-      >
+      <div class="boton-sesion iniciarSesion-btn">Iniciar Sesión</div>
+
+     
     </header>
 
     <main>
@@ -160,79 +155,181 @@
           </div>
         </div>
 
-        <div class="content" style="text-align: justify;">
-    <h2 style="text-align: left;">Descripción morfológica</h2>
-    <p><em>Amanita phalloides</em>, conocida como "oronja verde" o "hongo de la muerte", es un basidiomiceto mortal de la familia Amanitaceae. Su sombrero (5-15 cm de diámetro) varía de verde oliva a amarillento, con superficie lisa y margen estriado. Las láminas son libres, blancas y apretadas. El pie (8-15 cm) es blanco con escamaciones verdosas, presenta un anillo membranoso y una volva basal en forma de saco bien desarrollada. La carne es blanca, con olor ligeramente dulce en ejemplares jóvenes que se vuelve fétido en la madurez.</p>
-    
-    <h3 style="text-align: left;">Características distintivas</h3>
-    <ul>
-      <li><strong>Volva:</strong> Estructura en copa que envuelve la base (clave diagnóstica).</li>
-      <li><strong>Anillo:</strong> Blanco, persistente y colgante como una falda.</li>
-      <li><strong>Esporas:</strong> Elipsoidales, lisas, 8-11 × 7-9 µm, blancas en masa.</li>
-      <li><strong>Confusiones:</strong> Similar a <em>Russula virescens</em> (comestible, sin volva ni anillo).</li>
-    </ul>
+        <div class="content" style="text-align: justify">
+          <h2 style="text-align: left">Descripción morfológica</h2>
+          <p>
+            <em>Amanita phalloides</em>, conocida como "oronja verde" o "hongo
+            de la muerte", es un basidiomiceto mortal de la familia Amanitaceae.
+            Su sombrero (5-15 cm de diámetro) varía de verde oliva a
+            amarillento, con superficie lisa y margen estriado. Las láminas son
+            libres, blancas y apretadas. El pie (8-15 cm) es blanco con
+            escamaciones verdosas, presenta un anillo membranoso y una volva
+            basal en forma de saco bien desarrollada. La carne es blanca, con
+            olor ligeramente dulce en ejemplares jóvenes que se vuelve fétido en
+            la madurez.
+          </p>
 
-    <h2 style="text-align: left;">Distribución y hábitat</h2>
-    <p>Originaria de Europa, se ha naturalizado en América, África y Australia asociada a robles (<em>Quercus</em>), hayas (<em>Fagus</em>) y castaños (<em>Castanea</em>). Crece en bosques caducifolios y mixtos, preferentemente en suelos ácidos (pH 4-6). Fructifica de verano a otoño, individualmente o en pequeños grupos. Su micelio forma ectomicorrizas obligadas, siendo indicador de ecosistemas forestales maduros. En España es especialmente abundante en la cornisa cantábrica y sistemas montañosos.</p>
-    
-    <h3 style="text-align: left;">Condiciones ecológicas</h3>
-    <ul>
-      <li><strong>Asociaciones:</strong> 90% de casos bajo robles y encinas.</li>
-      <li><strong>Clima:</strong> Prefiere humedad relativa >70% y temperaturas 15-25°C.</li>
-      <li><strong>Dispersión:</strong> Las esporas son transportadas por el viento hasta 100 m del cuerpo fructífero.</li>
-    </ul>
+          <h3 style="text-align: left">Características distintivas</h3>
+          <ul>
+            <li>
+              <strong>Volva:</strong> Estructura en copa que envuelve la base
+              (clave diagnóstica).
+            </li>
+            <li>
+              <strong>Anillo:</strong> Blanco, persistente y colgante como una
+              falda.
+            </li>
+            <li>
+              <strong>Esporas:</strong> Elipsoidales, lisas, 8-11 × 7-9 µm,
+              blancas en masa.
+            </li>
+            <li>
+              <strong>Confusiones:</strong> Similar a
+              <em>Russula virescens</em> (comestible, sin volva ni anillo).
+            </li>
+          </ul>
 
-    <h2 style="text-align: left;">Toxicidad y mecanismo de acción</h2>
-    <p>Contiene dos grupos de toxinas mortales: amatoxinas (α-amanitina) y falotoxinas. La α-amanitina (0.2-0.4 mg/g de hongo fresco) inhibe irreversiblemente la ARN polimerasa II, bloqueando la síntesis proteica. Una sola seta (30 g) puede contener dosis letal para un adulto (LD50 = 0.1 mg/kg). Los síntomas aparecen en 3 fases: 1) gastrointestinal (6-24 h), 2) remisión aparente (24-72 h), y 3) fallo hepático (3-6 días). La mortalidad alcanza el 30% sin tratamiento, requiriendo trasplante hepático en casos graves.</p>
-    
-    <h3 style="text-align: left;">Principales toxinas</h3>
-    <ol>
-      <li><strong>α-amanitina:</strong> Responsable del 90% de la toxicidad (resistente a cocción y secado).</li>
-      <li><strong>β-amanitina:</strong> Menor potencia pero mayor estabilidad térmica.</li>
-      <li><strong>Faloidina:</strong> Destructora de hepatocitos (no absorbible por vía oral).</li>
-    </ol>
+          <h2 style="text-align: left">Distribución y hábitat</h2>
+          <p>
+            Originaria de Europa, se ha naturalizado en América, África y
+            Australia asociada a robles (<em>Quercus</em>), hayas
+            (<em>Fagus</em>) y castaños (<em>Castanea</em>). Crece en bosques
+            caducifolios y mixtos, preferentemente en suelos ácidos (pH 4-6).
+            Fructifica de verano a otoño, individualmente o en pequeños grupos.
+            Su micelio forma ectomicorrizas obligadas, siendo indicador de
+            ecosistemas forestales maduros. En España es especialmente abundante
+            en la cornisa cantábrica y sistemas montañosos.
+          </p>
 
-    <h2 style="text-align: left;">Diagnóstico y tratamiento</h2>
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-      <tr>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Método</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Efectividad</th>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Test de Meixner</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">Detección rápida de amatoxinas (falsos positivos 15%)</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Silibinina IV</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">Antídoto (20 mg/kg/día, bloquea captación hepática)</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;">Carbón activado</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">Eficaz en primeras 4 horas (1 g/kg cada 4 h)</td>
-      </tr>
-    </table>
+          <h3 style="text-align: left">Condiciones ecológicas</h3>
+          <ul>
+            <li>
+              <strong>Asociaciones:</strong> 90% de casos bajo robles y encinas.
+            </li>
+            <li>
+              <strong>Clima:</strong> Prefiere humedad relativa >70% y
+              temperaturas 15-25°C.
+            </li>
+            <li>
+              <strong>Dispersión:</strong> Las esporas son transportadas por el
+              viento hasta 100 m del cuerpo fructífero.
+            </li>
+          </ul>
 
-    <h2 style="text-align: left;">Prevención y reconocimiento</h2>
-    <ul>
-      <li><strong>Claves visuales:</strong> Siempre buscar volva en forma de saco y anillo.</li>
-      <li><strong>Error común:</strong> 60% de intoxicaciones ocurren al confundirla con <em>Amanita caesarea</em> joven.</li>
-      <li><strong>Recomendaciones:</strong> No recolectar setas con volva entre especies comestibles.</li>
-    </ul>
+          <h2 style="text-align: left">Toxicidad y mecanismo de acción</h2>
+          <p>
+            Contiene dos grupos de toxinas mortales: amatoxinas (α-amanitina) y
+            falotoxinas. La α-amanitina (0.2-0.4 mg/g de hongo fresco) inhibe
+            irreversiblemente la ARN polimerasa II, bloqueando la síntesis
+            proteica. Una sola seta (30 g) puede contener dosis letal para un
+            adulto (LD50 = 0.1 mg/kg). Los síntomas aparecen en 3 fases: 1)
+            gastrointestinal (6-24 h), 2) remisión aparente (24-72 h), y 3)
+            fallo hepático (3-6 días). La mortalidad alcanza el 30% sin
+            tratamiento, requiriendo trasplante hepático en casos graves.
+          </p>
 
-    <h2 style="text-align: left;">Historia y casos relevantes</h2>
-    <ul>
-      <li>Responsable del 90% de muertes por micetismo en Europa.</li>
-      <li>En 1740, el emperador Carlos VI murió tras consumirla confundida con <em>Amanita caesarea</em>.</li>
-      <li>En 2012, un brote en California afectó a 14 personas (3 trasplantes hepáticos).</li>
-    </ul>
+          <h3 style="text-align: left">Principales toxinas</h3>
+          <ol>
+            <li>
+              <strong>α-amanitina:</strong> Responsable del 90% de la toxicidad
+              (resistente a cocción y secado).
+            </li>
+            <li>
+              <strong>β-amanitina:</strong> Menor potencia pero mayor
+              estabilidad térmica.
+            </li>
+            <li>
+              <strong>Faloidina:</strong> Destructora de hepatocitos (no
+              absorbible por vía oral).
+            </li>
+          </ol>
 
-    <h2 style="text-align: left;">Investigación reciente</h2>
-    <ul>
-      <li>Estudios con anticuerpos monoclonales contra α-amanitina (fase preclínica).</li>
-      <li>Uso de técnicas PCR para detectar ADN en muestras gástricas.</li>
-      <li>Nuevos protocolos con N-acetilcisteína y penicilina G como coadyuvantes.</li>
-    </ul>
-</div>
+          <h2 style="text-align: left">Diagnóstico y tratamiento</h2>
+          <table
+            style="width: 100%; border-collapse: collapse; margin-bottom: 20px"
+          >
+            <tr>
+              <th
+                style="border: 1px solid #ddd; padding: 8px; text-align: left"
+              >
+                Método
+              </th>
+              <th
+                style="border: 1px solid #ddd; padding: 8px; text-align: left"
+              >
+                Efectividad
+              </th>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 8px">
+                Test de Meixner
+              </td>
+              <td style="border: 1px solid #ddd; padding: 8px">
+                Detección rápida de amatoxinas (falsos positivos 15%)
+              </td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 8px">
+                Silibinina IV
+              </td>
+              <td style="border: 1px solid #ddd; padding: 8px">
+                Antídoto (20 mg/kg/día, bloquea captación hepática)
+              </td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid #ddd; padding: 8px">
+                Carbón activado
+              </td>
+              <td style="border: 1px solid #ddd; padding: 8px">
+                Eficaz en primeras 4 horas (1 g/kg cada 4 h)
+              </td>
+            </tr>
+          </table>
+
+          <h2 style="text-align: left">Prevención y reconocimiento</h2>
+          <ul>
+            <li>
+              <strong>Claves visuales:</strong> Siempre buscar volva en forma de
+              saco y anillo.
+            </li>
+            <li>
+              <strong>Error común:</strong> 60% de intoxicaciones ocurren al
+              confundirla con <em>Amanita caesarea</em> joven.
+            </li>
+            <li>
+              <strong>Recomendaciones:</strong> No recolectar setas con volva
+              entre especies comestibles.
+            </li>
+          </ul>
+
+          <h2 style="text-align: left">Historia y casos relevantes</h2>
+          <ul>
+            <li>Responsable del 90% de muertes por micetismo en Europa.</li>
+            <li>
+              En 1740, el emperador Carlos VI murió tras consumirla confundida
+              con <em>Amanita caesarea</em>.
+            </li>
+            <li>
+              En 2012, un brote en California afectó a 14 personas (3
+              trasplantes hepáticos).
+            </li>
+          </ul>
+
+          <h2 style="text-align: left">Investigación reciente</h2>
+          <ul>
+            <li>
+              Estudios con anticuerpos monoclonales contra α-amanitina (fase
+              preclínica).
+            </li>
+            <li>
+              Uso de técnicas PCR para detectar ADN en muestras gástricas.
+            </li>
+            <li>
+              Nuevos protocolos con N-acetilcisteína y penicilina G como
+              coadyuvantes.
+            </li>
+          </ul>
+        </div>
         <div class="img3D">
           <h2>Modelo 3D:</h2>
           <model-viewer
@@ -346,7 +443,7 @@
             >
           </div>
           <div class="contacta">
-            <a href="#">Contáctanos</a> <br />
+            <a href="../../../../Contactanos/contacto.html">Contáctanos</a> <br />
             <br />
             <a href="../../../../SiteMap/sitemap.html">Mapa del sitio</a>
           </div>
@@ -369,5 +466,6 @@
     </footer>
 
     <script src="../codigo.js"></script>
+    <script src="session.js"></script>
   </body>
 </html>

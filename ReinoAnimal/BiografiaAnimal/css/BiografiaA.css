@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
 }
 
 body {
@@ -115,7 +116,7 @@ header {
 .boton-sesion {
     display: none;
     padding: 8px 15px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 20px;
@@ -124,16 +125,10 @@ header {
     border: 2px solid transparent;
 }
 
-.boton-sesion:hover {
-    background: transparent;
-    border-color: #ff4444;
-}
-
-
 .boton-sesion-mobile {
     display: none;
     padding: 10px 20px;
-    background: #ff4444;
+    background: transparent;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -223,7 +218,7 @@ main {
     align-items: flex-end;
     perspective: 800px;
     transition: filter 0.3s ease;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 .background {
@@ -269,16 +264,20 @@ main {
 .taxonomy,
 .taxonomy2 {
     display: grid;
-    grid-template-columns: repeat(6, minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
     gap: 8px;
 }
 
 .taxonomy div,
 .taxonomy2 div {
+    display: flex;
+    align-items: center;      /* Centra verticalmente */
+    justify-content: center;  /* Centra horizontalmente */
     font-size: 8px;
     text-align: center;
-    padding: 3px;
+    padding: 10px;            /* Puedes ajustar el tamaño si deseas cuadros más grandes */
     font-weight: bold;
+    height: 100%;
 }
 
 .taxonomy div {
@@ -657,7 +656,7 @@ model-viewer {
     .boton-sesion {
         display: inline-block;
         padding: 10px 25px;
-        background: #ff4444;
+        background: transparent;
         color: #fff;
         text-decoration: none;
         border-radius: 25px;
@@ -665,11 +664,6 @@ model-viewer {
         transition: all 0.3s ease;
         border: 2px solid transparent;
         margin-left: 20px;
-    }
-
-    .boton-sesion:hover {
-        background: transparent;
-        border-color: #ff4444;
     }
 
     .boton-sesion-mobile {
@@ -713,9 +707,6 @@ model-viewer {
         font-size: 15px;
         font-weight: bold;
         height: min-content;
-        flex: 1;
-        min-width: 100px;
-        max-width: 150px;
     }
 
     .taxonomy div {
@@ -737,6 +728,7 @@ model-viewer {
         /* Reset margin-top for desktop */
         align-items: center;
         /* Align items to center for desktop */
+        margin-right: 80px;
     }
 
     .background {
